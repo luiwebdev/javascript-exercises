@@ -1,6 +1,6 @@
-const removeFromArray = function(arr, number) {
+const removeFromArray = function(arr, ...number) {
     let arrModify = arr.filter((num) => {
-        if (num !== number) {
+        if (!number.includes(num)) {
             return num;
         }
     })
